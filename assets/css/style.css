@@ -8,10 +8,18 @@
     --color-black: #000000;
 }
 
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.f-50{
+    flex-basis: 50%;
+}
+
 .gdlr-navigation-wrapper{ border-top-width: 4px; border-top-style: solid; }
 .gdlr-navigation-wrapper .gdlr-navigation-container{ position: relative; }
 .gdlr-navigation-wrapper .gdlr-navigation{ margin: 0px 15px; }
-.gdlr-navigation-wrapper .gdlr-main-menu > li{ padding: 0px; }
+.gdlr-navigation-wrapper .gdlr-main-menu > li{ padding: 0px; display: flex; align-items: center;}
 .gdlr-navigation-wrapper .gdlr-main-menu > li > a{ font-size: 12px; padding: 17px 25px 17px 20px; margin: 0px; 
 	font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
 .gdlr-navigation-wrapper .gdlr-main-menu > li > a.sf-with-ul-pre,
@@ -28,7 +36,7 @@ nav.gdlr-navigation.gdlr-align-left #gdlr-menu-search-button{ float: right; }
 nav.gdlr-navigation ul.sf-menu { text-align: left; display: inline-block; 
 	float: none; line-height: 1.7; }
 
-.gdlr-navigation-wrapper .gdlr-main-menu > li{ padding: 0px; }
+.gdlr-navigation-wrapper .gdlr-main-menu > li{ padding: 0px; display: flex;}
 .gdlr-navigation-wrapper .gdlr-main-menu > li > a{ font-size: 12px; padding: 17px 25px 17px 20px; margin: 0px; 
 	font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
 .gdlr-navigation-wrapper .gdlr-main-menu > li > a.sf-with-ul-pre,
@@ -97,22 +105,73 @@ header.header nav ul{
 }
 
 .open_search{
-    cursor: pointer;
 }
 .open_search i{
     color: var(--color-white);
     font-size: 1.2em;
+    cursor: pointer;
 }
 .drop_search{
     position: absolute;
     top: 100%;
     right: 0;
+    height: 0;
     background-color: var(--color-blue);
+    padding: 0px 20px;
+    transition: all .16s;
+    overflow: hidden;
+}
+.open_search{
+    height: auto;
     padding: 20px;
+    z-index: 1;
 }
 .drop_search input{
     background-color: transparent;
     outline: none;
     border: none;
     color: var(--color-white);
+}
+.drop_search input::placeholder{
+    color: var(--color-white);
+}
+
+.section_dest{
+    padding: 50px 10px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/05/53/hot-air-balloon-1867656_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card_big{
+    width: 100%;
+    height: 380px;
+    position: relative;
+}
+.card_big .card_big_head{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.card_big img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card_min{
+    flex-basis: calc(50% - 20px);
+    height: calc((380px / 2) - 5px);
+    margin: 0 10px 10px 10px;
+    position: relative;
+}
+.card_min .card_min_head{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.card_min img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
