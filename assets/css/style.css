@@ -197,6 +197,7 @@ header.header nav ul{
 
 .header_default{
     padding: 40px 10px;
+    background-color: #f7f7f7;
 }
 .title_default{
     color: #222222;
@@ -522,3 +523,104 @@ hr.line{
     color: var(--color-blue);
 }
 /* post style */
+
+.over_btn_menu{
+    display: none;
+}
+.open_menu, header.header nav.menu_mobile{
+    display: none;
+}
+
+@media(max-width: 1024px){
+    .card_default{
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media(max-width: 768px){
+    .gdlr-navigation-wrapper{
+        display: none;
+    }
+    .top_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .over_btn_menu{
+        display: flex;
+    }
+    .btn_menu{
+        background-color: var(--color-blue-dark);
+        padding: 2px;
+        cursor: pointer;
+    }
+    .btn_menu i{
+        color: var(--color-white);
+        font-size: 2em;
+    }
+    nav.menu_mobile{
+        position: absolute;
+        top: calc(100%);
+        left: 0;
+        width: 100%;
+        background-color: var(--color-blue);
+        z-index: 10;
+        opacity: 0;
+        padding: 15px 10px;
+        transition: all .23s;
+    }
+    .open_menu{
+        opacity: 1!important;
+        display: flex!important;
+    }
+    nav.menu_mobile ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav.menu_mobile ul li{
+        width: 100%;
+    }
+    nav.menu_mobile ul li a{
+        color: var(--color-white);
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+    .top_header img{
+        max-width: 250px;
+    }
+    .footer_info, .footer_logo{
+        flex-basis: 100%;
+    }
+    .footer_logo img{
+        max-width: 200px;
+    }
+    .footer_logo{
+        margin: 20px 0 10px;
+    }
+    .footer_info{
+        padding-right: 0;
+    }
+    .list_simple, .sidebar{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .card_default, .card_simple{
+        flex-basis: 100%;
+    }
+    .top_header img{
+        max-width: 190px;
+    }
+    .card_simple{
+        margin: 10px 0 20px;
+    }
+    .sidebar{
+        padding: 10px;
+    }
+    .title_default{
+        font-size: 1.5em;
+    }
+}

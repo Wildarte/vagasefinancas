@@ -17,13 +17,36 @@
             <a href="">
                 <img src="assets/img/logo.png" alt="">
             </a>
+
+            <div class="over_btn_menu">
+                <span class="btn_menu">
+                    <i class="bi bi-list"></i>
+                </span>
+            </div>
+
+            <nav class="menu_mobile">
+                <ul>
+                    <li>
+                        <a href="">Cartão</a>
+                    </li>
+                    <li>
+                        <a href="">Emprego</a>
+                    </li>
+                    <li>
+                        <a href="">Empréstimo</a>
+                    </li>
+                    <li>
+                        <a href="">Rensa Extra</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <div class="gdlr-navigation-wrapper">
             
             <div class="gdlr-navigation-container container container_header">
                 <div class="gdlr-navigation-gimmick" id="gdlr-navigation-gimmick" style="left: 0px;"></div>
     
-                <nav class="gdlr-align-left sf-js-enabled sf-arrows" id="gdlr-main-navigation" role="navigation">
+                <nav class="gdlr-align-left sf-js-enabled sf-arrows menu-response" id="gdlr-main-navigation" role="navigation">
                     <ul id="menu-navigation-1" class="sf-menu gdlr-main-menu">
                         <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5459menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5459 gdlr-normal-menu"><a href="https://pt.financeandjobs.com/category/cartao-de-credito/">Cartão de Crédito</a>
                         </li>
@@ -46,4 +69,6 @@
                 </div>	
             </div>
         </div>
+
+        
     </header>

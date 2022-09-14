@@ -73,13 +73,13 @@
         </section>
 
 
-        <section class="container">
+        <section class="">
 
             <header class="header_default">
-                <h2 class="title_default">Vagas de Emprego</h2>
+                <h2 class="title_default container">Vagas de Emprego</h2>
             </header>
 
-            <section class="list_post_default">
+            <section class="list_post_default container">
 
                 <article class="card_default">
 
